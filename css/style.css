@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300");
+
 html {
   height: 100%;
 }
 
 body {
-  background: #3B5453;
-  background-image: url("camp.svg");
-  background-repeat: no-repeat;
+  background: #2357a6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #235858, #4357a6);  /*   Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #435858, #2357a6);
   background-size: 100%;
-  
+
   font-family: 'Lato', sans-serif;
   text-align: center;
   color: #FFF;
@@ -21,9 +22,11 @@ h1 {
 }
 
 img {
-  fill: #000000;
-  width: 200px;
-  height: 200px;
+  display: block;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  height: 160px;
 }
 
 main {

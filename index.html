@@ -18,53 +18,102 @@
 		<main>
 			<div class="row">
 				<div class="column">
-					<div class="card" id="brody-choke">Kaffee</div>
+					<div class="card" id="kaffee">Kaffee</div>
 				</div>
 				<div class="column">
-					<div class="card" id="brody-eating">Ofen</div>
+					<div class="card" id="ofen">Ofen</div>
 				</div>
 				<div class="column">
-					<div class="card" id="brody-choke">Bier</div>
+					<div class="card" id="treppe">Treppe</div>
 				</div>
 				<div class="column">
-					<div class="card" id="brody-choke">Bier</div>
+					<div class="card" id="wasser">Wasser</div>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="column">
-					<div class="card" id="brody-choke">Bier</div>
+					<div class="card" id="klo">Klotür</div>
 				</div>
 				<div class="column">
-					<div class="card" id="brody-eating">Bier</div>
+					<div class="card" id="nase">Nase</div>
 				</div>
 				<div class="column">
-					<div class="card" id="brody-choke">Bier</div>
+					<div class="card" id="robot">Robot</div>
 				</div>
 				<div class="column">
-					<div class="card" id="brody-choke">Bier</div>
+					<div class="card" id="lol">LOL</div>
 				</div>
 			</div>
 
-			<audio data-key="choking" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/81080/Chocking_001.wav.m4a"></audio>
-			<audio data-key="eating" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/81080/Eating_001.wav.m4a"></audio>
+			<audio data-key="sound1" src="audio/kaffee.mp3"></audio>
+			<audio data-key="sound2" src="audio/ofen.mp3"></audio>
+			<audio data-key="sound3" src="audio/treppe.mp3"></audio>
+			<audio data-key="sound4" src="audio/wasser.mp3"></audio>
+			<audio data-key="sound5" src="audio/klo.mp3"></audio>
+			<audio data-key="sound6" src="audio/nase.mp3"></audio>
+			<audio data-key="sound7" src="audio/robot.mp3"></audio>
+			<audio data-key="sound8" src="audio/lol.mp3"></audio>
 
 		</main>
 
 		<script>
-			var choke = document.getElementById("brody-choke");
-			var chokeSound = document.querySelector(`audio[data-key="choking"]`);
+			var btn1 = document.getElementById("kaffee");
+			var sound1 = document.querySelector(`audio[data-key="sound1"]`);
 
-			var eating = document.getElementById("brody-eating");
-			var eatingSound = document.querySelector(`audio[data-key="eating"]`);
+			var btn2 = document.getElementById("ofen");
+			var sound2 = document.querySelector(`audio[data-key="sound2"]`);
 
-			choke.addEventListener("click", function( event ) {
-			  chokeSound.play();
+			var btn3 = document.getElementById("treppe");
+			var sound3 = document.querySelector(`audio[data-key="sound3"]`);
+
+			var btn4 = document.getElementById("wasser");
+			var sound4 = document.querySelector(`audio[data-key="sound4"]`);
+
+			var btn5 = document.getElementById("klo");
+			var sound5 = document.querySelector(`audio[data-key="sound5"]`);
+
+			var btn6 = document.getElementById("nase");
+			var sound6 = document.querySelector(`audio[data-key="sound6"]`);
+
+			var btn7 = document.getElementById("robot");
+			var sound7 = document.querySelector(`audio[data-key="sound7"]`);
+
+			var btn8 = document.getElementById("lol");
+			var sound8 = document.querySelector(`audio[data-key="sound8"]`);
+
+			btn1.addEventListener("click", function( event ) {
+			  sound1.play();
 			}, false);
 
-			eating.addEventListener("click", function( event ) {
-			  eatingSound.play();
+			btn2.addEventListener("click", function( event ) {
+			  sound2.play();
 			}, false);
+
+			btn3.addEventListener("click", function( event ) {
+			  sound3.play();
+			}, false);
+
+			btn4.addEventListener("click", function( event ) {
+			  sound4.play();
+			}, false);
+
+			btn5.addEventListener("click", function( event ) {
+			  sound5.play();
+			}, false);
+
+			btn6.addEventListener("click", function( event ) {
+			  sound6.play();
+			}, false);
+
+			btn7.addEventListener("click", function( event ) {
+			  sound7.play();
+			}, false);
+
+			btn8.addEventListener("click", function( event ) {
+			  sound8.play();
+			}, false);
+
 		</script>
 
 	</body>

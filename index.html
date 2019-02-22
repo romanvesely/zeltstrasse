@@ -24,16 +24,16 @@
 					<div class="card" id="ofen">Ofen</div>
 				</div>
 				<div class="column">
-					<div class="card" id="treppe">Treppe</div>
+					<div class="card" id="ofen2">Wärme</div>
 				</div>
 				<div class="column">
-					<div class="card" id="wasser">Wasser</div>
+					<div class="card" id="treppe">Treppe</div>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="column">
-					<div class="card" id="klo">Klotür</div>
+					<div class="card" id="wasser">Wasser</div>
 				</div>
 				<div class="column">
 					<div class="card" id="nase">Nase</div>
@@ -46,6 +46,21 @@
 				</div>
 			</div>
 
+			<div class="row">
+				<div class="column">
+					<div class="card" id="klo">Klotür</div>
+				</div>
+				<div class="column">
+					<div class="card" id="klingel">Klingel</div>
+				</div>
+				<div class="column">
+					<div class="card" id="induktion">Induktion</div>
+				</div>
+				<div class="column">
+					<div class="card" id="ahh">Ahh!</div>
+				</div>
+			</div>
+
 			<audio data-key="sound1" src="audio/kaffee.mp3"></audio>
 			<audio data-key="sound2" src="audio/ofen.mp3"></audio>
 			<audio data-key="sound3" src="audio/treppe.mp3"></audio>
@@ -54,6 +69,11 @@
 			<audio data-key="sound6" src="audio/nase.mp3"></audio>
 			<audio data-key="sound7" src="audio/robot.mp3"></audio>
 			<audio data-key="sound8" src="audio/lol.mp3"></audio>
+			<audio data-key="sound9" src="audio/ofen2.mp3"></audio>
+			<audio data-key="sound10" src="audio/klingel.mp3"></audio>
+			<audio data-key="sound11" src="audio/induktion.mp3"></audio>
+			<audio data-key="sound12" src="audio/ahh.mp3"></audio>
+
 
 		</main>
 
@@ -81,6 +101,18 @@
 
 			var btn8 = document.getElementById("lol");
 			var sound8 = document.querySelector(`audio[data-key="sound8"]`);
+
+			var btn9 = document.getElementById("ofen2");
+			var sound9 = document.querySelector(`audio[data-key="sound9"]`);
+
+			var btn10 = document.getElementById("klingel");
+			var sound10 = document.querySelector(`audio[data-key="sound10"]`);
+
+			var btn11 = document.getElementById("induktion");
+			var sound11 = document.querySelector(`audio[data-key="sound11"]`);
+
+			var btn12 = document.getElementById("ahh");
+			var sound12 = document.querySelector(`audio[data-key="sound12"]`);
 
 			btn1.addEventListener("click", function( event ) {
 			  sound1.play();
@@ -113,6 +145,23 @@
 			btn8.addEventListener("click", function( event ) {
 			  sound8.play();
 			}, false);
+
+			btn9.addEventListener("click", function( event ) {
+			  sound9.play();
+			}, false);
+
+			btn10.addEventListener("click", function( event ) {
+			  sound10.play();
+			}, false);
+
+			btn11.addEventListener("click", function( event ) {
+			  sound11.play();
+			}, false);
+
+			btn12.addEventListener("click", function( event ) {
+			  sound12.play();
+			}, false);
+
 
 		</script>
 
